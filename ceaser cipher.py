@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 def encryption(plain_text,shift_key):
@@ -31,7 +25,7 @@ def decryption(cipher_text,shift_key):
 want_to_end=False
 while not want_to_end:
     choice=input("Type 'encrypt' for encryption,Type 'decrypt' for decryption:").lower()
-    message=input("Type your message:")
+    message=input("Type your message:").lower()
     shift_number=int(input("Enter shift number:"))
 
     if choice=='encrypt':
@@ -43,10 +37,6 @@ while not want_to_end:
         want_to_end=True
         print("Have a nice day! bye..")
     
-
-
-# In[ ]:
-
 
 
 
